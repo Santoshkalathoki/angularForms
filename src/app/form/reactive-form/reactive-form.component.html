@@ -9,7 +9,7 @@
                         <div class="form-group">
                             <label>Name<span class="text-danger">*</span></label>
                             <input type="text" formControlName="userFirstName" name="userFirstName" class="form-control" placeholder="Name" />
-                            <span *ngIf="santosh || forms['userFirstName'].dirty || forms['userFirstName'].touched && forms['userFirstName'].invalid"
+                            <span *ngIf="submitted || forms['userFirstName'].dirty || forms['userFirstName'].touched && forms['userFirstName'].invalid"
                                 class = "info-msg text-danger">
                                 <small *ngIf="forms['userFirstName'].errors && forms['userFirstName'].errors?.['required']">
                                     User First Name is required
@@ -24,7 +24,7 @@
                         <div class="form-group">
                             <label>Address<span class="text-danger">*</span></label>
                             <input type="text" formControlName="address" class="form-control" placeholder="Address" />
-                            <span *ngIf=" santosh || forms['address'].dirty || forms['address'].touched && forms['address'].invalid"
+                            <span *ngIf=" submitted || forms['address'].dirty || forms['address'].touched && forms['address'].invalid"
                                 class = "info-msg text-danger">
                                 <small *ngIf="forms['address'].errors && forms['address'].errors?.['required']">
                                     Address is required
@@ -38,7 +38,7 @@
                         <div class="form-group">
                             <label>Email <span class="text-danger">*</span></label>
                             <input type="email" formControlName="email" class="form-control"  placeholder="Email"  />
-                            <span *ngIf=" santosh ||  forms['email'].dirty || forms['email'].touched && forms['email'].invalid"
+                            <span *ngIf=" submitted ||  forms['email'].dirty || forms['email'].touched && forms['email'].invalid"
                                 class = "info-msg text-danger">
                                 <small *ngIf="forms['email'].errors && forms['email'].errors?.['required']">
                                     Email is required

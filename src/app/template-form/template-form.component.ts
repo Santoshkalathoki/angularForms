@@ -7,12 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateFormComponent implements OnInit {
   templateFormData: any={};
-  constructor() {}
+  submitted:boolean = false;
+  constructor() {
 
-  ngOnInit(): void {}
+  }
 
-  signUp(): void {
-    console.log(this.templateFormData.valid);
+  ngOnInit(): void {
+    
+  }
+
+  signUp(form:any): void {
+    this.submitted = true;
+    console.log(form.value);
   }
 }
 

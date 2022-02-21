@@ -9,7 +9,7 @@ import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/fo
 export class ReactiveFormComponent implements OnInit {
 
   reactiveForm: FormGroup = new FormGroup({});
-  santosh:boolean = false;
+  submitted:boolean = false;
   constructor(
     private form: FormBuilder
   ) { }
@@ -26,7 +26,7 @@ export class ReactiveFormComponent implements OnInit {
   }
 
   onSubmitForm(form: any): void {
-    this.santosh = true;
+    this.submitted = true;
     if(this.reactiveForm.valid){
       console.log(form.value)
     }
