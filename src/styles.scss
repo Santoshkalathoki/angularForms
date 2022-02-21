@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+// /* You can add global styles to this file, and also import other style files */
+// *{
+//     margin: 0;
+//     padding: 0;
+// }
+// p{
+//     font-size: 30px;
+    
+// }
+
+table, th, td{
+    border: 1px solid black;
+}
+table{
+    margin: 50px;
+}
+
+// @import "~bootstrap/dist/css/bootstrap.css";
+
